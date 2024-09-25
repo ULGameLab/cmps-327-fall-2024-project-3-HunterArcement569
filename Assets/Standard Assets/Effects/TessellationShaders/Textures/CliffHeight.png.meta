@@ -67,3 +67,10 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 52977
+  packageName: Nature Starter Kit 2
+  packageVersion: 1.0
+  assetPath: Assets/Standard Assets/Effects/TessellationShaders/Textures/CliffHeight.png
+  uploadId: 96407
