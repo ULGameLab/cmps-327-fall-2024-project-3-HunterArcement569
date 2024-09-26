@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 54d7d1376753c3a4083334a9b934d625
+timeCreated: 1541287397
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 132479
+  packageName: Industrial Door Pack #2 ( PBR + animated )
+  packageVersion: 1.0
+  assetPath: Assets/Assets_DoorsIndustrial_v2/models/customColliders/Materials/03
+    - Default.mat
+  uploadId: 276703

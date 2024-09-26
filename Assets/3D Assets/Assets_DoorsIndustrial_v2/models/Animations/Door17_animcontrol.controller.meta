@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e213751f4ef52d146ae5b997ddf5c74a
+timeCreated: 1541304567
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 132479
+  packageName: Industrial Door Pack #2 ( PBR + animated )
+  packageVersion: 1.0
+  assetPath: Assets/Assets_DoorsIndustrial_v2/models/Animations/Door17_animcontrol.controller
+  uploadId: 276703
