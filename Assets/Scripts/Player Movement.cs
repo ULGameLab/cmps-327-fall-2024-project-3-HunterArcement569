@@ -75,7 +75,6 @@ public class PlayerMovement : MonoBehaviour
         air
     }
 
-    float minimumFall = 2.5f; //dependant on the game, this is the fall check
     bool wasGrounded;
     bool wasFalling;
     float startOfFall;
