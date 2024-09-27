@@ -8,6 +8,8 @@ public class MultiLightFlickering : MonoBehaviour
     public float timeDelay;
 
     private Light[] allLights;
+    private Light firstLight;
+    private Light secondLight;
 
     void Update()
     {
@@ -20,19 +22,23 @@ public class MultiLightFlickering : MonoBehaviour
     private void Start()
     {
         allLights = GetComponentsInChildren<Light>();
+        firstLight = allLights[0];
+        secondLight = allLights[1];
     }
 
     IEnumerator FlickeringLight()
     {
         isFlickering = true;
 
-        foreach (Light light in allLights) {light.enabled = false;}
+        firstLight.enabled = false;
+        secondLight.enabled = false;
 
         timeDelay = Random.Range(0.25f, 1f); //this is the min and max of the flicker
 
         yield return new WaitForSeconds(timeDelay); //wait for the time delay
 
-        foreach (Light light in allLights) { light.enabled = true; }
+        firstLight.enabled = true;
+        secondLight.enabled = true;
 
         timeDelay = Random.Range(0.5f, 1.3f);
 
