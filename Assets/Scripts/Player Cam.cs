@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private float sensX = 1000;
-    private float sensY = 1000;
+    private float sensX = 500;
+    private float sensY = 500;
 
     public Transform orientation;
 
