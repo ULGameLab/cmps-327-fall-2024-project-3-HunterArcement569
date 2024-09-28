@@ -82,6 +82,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        //check if the player has gone under a certain y limit, and if so teleport them back to where the player normally spawns
+        if (gameObject.transform.position.y <= -10) gameObject.transform.position = new Vector3(-326,21,-319);
+
         groundCheck();
 
         MyInput();
