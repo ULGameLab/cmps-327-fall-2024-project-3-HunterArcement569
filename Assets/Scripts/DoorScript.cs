@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DoorScript : MonoBehaviour
 {
-    
-    Animator animator;
+    private Animator animator;
     private bool doorOpen = false;
     private bool playerInTrigger;
+    public Text doorControls;
+
 
     void Start()
     {
@@ -18,6 +20,10 @@ public class DoorScript : MonoBehaviour
     
     void Update()
     {
+        //check if the door controls should be on the hud or not
+        if(playerInTrigger) { doorControls.gameObject.SetActive(true); }
+        else doorControls.gameObject.SetActive(false);
+
         //check that the player is holding the button and the player is in the trigger
         if (Input.GetKeyDown(KeyCode.F) && playerInTrigger)
         {
